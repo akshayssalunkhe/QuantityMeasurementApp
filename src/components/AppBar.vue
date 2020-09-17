@@ -1,26 +1,27 @@
 <template>
-<div>
-
-   <md-toolbar class="md-primary">
-      <h3 class="md-title">Primary</h3>
-    </md-toolbar>
-</div>
+  <div class="tidiv">
+        <a class="md-title">Welcome To Quantity Measurement </a>
+  </div>
 </template>
 
 <script>
-// import { component } from 'vue/types/umd'
-
-export default {
+  export default {
    name: 'AppBar'
-
- }
-
-  
+}
 </script>
 
 <style scoped>
-  .md-toolbar + .md-toolbar {
-    margin-top: 16px;
+.tidiv{
+  background-color:#446DFF;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  
+}
+  .md-title{
+    font-size:xx-large;
+    color: white;
+    
+  
   }
-
 </style>
