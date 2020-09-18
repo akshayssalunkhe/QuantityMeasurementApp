@@ -17,7 +17,7 @@ export default {
 .bu-div{
     text-align: center;
     margin-top: 5%;
-    padding-right: 20%;
+    padding-right: 25%;
     background-color: #F5F6FA;
 }
 </style>

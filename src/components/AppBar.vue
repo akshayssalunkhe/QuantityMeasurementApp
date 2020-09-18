@@ -21,7 +21,5 @@
   .md-title{
     font-size:xx-large;
     color: white;
-    
-  
-  }
+}
 </style>

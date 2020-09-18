@@ -1,14 +1,13 @@
 <template>
   <div>
     <AppBar/>
-    <Button/>
     <MediaCard/>
     <TextBox/>
   </div>
 </template>
 
 <script>
-import Button from './components/Button';
+
 import MediaCard from './components/MediaCard';
 import AppBar from './components/AppBar';
 import TextBox from './components/TextBox';
@@ -20,7 +19,7 @@ export default {
 
     }
   },components:{
-    MediaCard,AppBar,Button,TextBox,
+    MediaCard,AppBar,TextBox,
 
     }
     }
