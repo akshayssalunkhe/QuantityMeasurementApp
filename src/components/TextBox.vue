@@ -4,11 +4,10 @@
       <md-content>
         <md-field>
           <label>FROM</label>
-          <md-input></md-input>
+              <md-input></md-input>
         </md-field>
         <select class="selectfrom">
-            <ul>
-            </ul>
+            <option></option>
         </select>
       </md-content>
       <md-content>
@@ -28,12 +27,6 @@
 <script>
 export default {
     name:'TextBox',
-     
-//   data: () => ({
-//     subUnits: ["METER", "CENTIMETER", "MILIMETER"],
-//     selectedFirstUnit: null,
-//     selectedSecondUnit: null,
-//   }),
 }
 </script>
 

@@ -1,16 +1,10 @@
 <template>
   <div>
-    <AppBar/>
-    <MediaCard/>
-    <TextBox/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-
-import MediaCard from './components/MediaCard';
-import AppBar from './components/AppBar';
-import TextBox from './components/TextBox';
 
 export default {
   data(){ 
@@ -18,11 +12,10 @@ export default {
     title:'Welcome To Quantity Measurement'
 
     }
-  },components:{
-    MediaCard,AppBar,TextBox,
+    
 
-    }
-    }
+  }
+}
   
 </script>
 

@@ -60,6 +60,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   border-radius: 7px;
+  background-color: white;
   filter: grayscale();
 }
 
