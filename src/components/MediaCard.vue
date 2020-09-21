@@ -3,15 +3,15 @@
     <div class="selection-container">
       <p>CHOOSE TYPE</p>
       <div class="cards">
-        <md-content class="length">
+        <md-content @click ="Selected('Length')" class="Length">
           <img src="../assets/Images/scale.png" />
           <p>Length</p>
         </md-content>
-        <md-content class="temperature">
+        <md-content @click="Selected('Temperature')" class="Temperature">
           <img src="../assets/Images/thermameter.png" />
           <p>Temperature</p>
         </md-content>
-        <md-content class="volume">
+        <md-content @click="Selected('Volume')" class="Volume">
           <img src="../assets/Images/beaker.png" />
           <p>Volume</p>
         </md-content>
@@ -22,9 +22,18 @@
 </template>
 
 <script>
+import {bus} from '../main' 
+
 export default {
   name:'MediaCard',
+
+methods:{
+  Selected:function(clikedunit) { 
+    bus.$emit('getValue', clikedunit)
+
+  }
 }
+};
 </script>
 
 <style scoped>
@@ -49,6 +58,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
 }
 
 .md-content {
@@ -64,7 +74,7 @@ export default {
   filter: grayscale();
 }
 
-.length:hover{
+.Length:hover{
   background-color: #edfdf9;
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #0ec098;
@@ -72,7 +82,7 @@ export default {
   filter: none ;
 }
 
-.temperature:hover {
+.Temperature:hover {
   background-color: #ffeef0;
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #fd5160;
@@ -80,7 +90,7 @@ export default {
   filter: none ;
 }
 
-.volume:hover {
+.Volume:hover {
   background-color: #e8ddff;
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #7224ff;
@@ -93,7 +103,6 @@ p {
   font: normal normal bold 20px/24px Montserrat;
   text-transform: capitalize;
 }
-
 .md-content > p {
   margin-top: 24px;
 }

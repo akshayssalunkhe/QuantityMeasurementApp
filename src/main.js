@@ -11,6 +11,8 @@ Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(VueMaterial)
 
+export const bus = new Vue();
+
 const router =new VueRouter({
   routes:Routes
 })

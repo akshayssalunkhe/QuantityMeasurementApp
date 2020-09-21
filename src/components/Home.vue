@@ -19,5 +19,7 @@ export default {
 </script>
 
 <style>
-
+html.md-theme-default {
+    background-color:#F5F6FA;
+}
 </style>

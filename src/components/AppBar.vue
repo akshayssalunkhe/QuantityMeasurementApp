@@ -16,10 +16,10 @@
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
-  
 }
   .md-title{
     font-size:xx-large;
     color: white;
+    
 }
 </style>
